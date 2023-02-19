@@ -1,4 +1,7 @@
 const http = require('http');
+
+require('dotenv').config({path:__dirname+'/.env'});
+
 const app = require('./app');
 const { loadPlanetsData } = require('./models/planets.model');
 const { mongoConnect } = require('./services/mongo');
